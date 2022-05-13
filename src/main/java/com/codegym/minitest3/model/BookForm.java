@@ -5,12 +5,12 @@ import org.springframework.web.multipart.MultipartFile;
 public class BookForm {
 
     private Long id;
-    private MultipartFile avatar;
     private String name;
     private int price;
     private String author;
-
+    private MultipartFile avatar;
     private Category category;
+
 
     public BookForm() {
     }

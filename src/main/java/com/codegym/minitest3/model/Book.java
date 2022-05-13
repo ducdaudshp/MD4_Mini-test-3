@@ -9,10 +9,10 @@ public class Book {
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long id;
 
-    private String avatar;
     private String name;
     private int price;
     private String author;
+    private String avatar;
     @ManyToOne
     @JoinColumn(name = "category_id")
     private Category category;
@@ -28,20 +28,22 @@ public class Book {
         this.avatar = avatar;
     }
 
-    public Book(String avatar, String name, int price, String author, Category category) {
-        this.avatar = avatar;
+    public Book(String name, int price, String author,String avatar, Category category) {
+
         this.name = name;
         this.price = price;
         this.author = author;
+        this.avatar = avatar;
         this.category = category;
     }
 
-    public Book(Long id, String avatar, String name, int price, String author, Category category) {
+    public Book(Long id, String name, int price, String author,String avatar, Category category) {
         this.id = id;
-        this.avatar = avatar;
+
         this.name = name;
         this.price = price;
         this.author = author;
+        this.avatar = avatar;
         this.category = category;
     }
 

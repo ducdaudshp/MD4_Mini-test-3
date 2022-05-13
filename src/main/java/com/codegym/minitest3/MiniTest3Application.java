@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MiniTest3Application {
 
     public static void main(String[] args) {
+
         SpringApplication.run(MiniTest3Application.class, args);
     }
 
